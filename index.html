@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function chBackcolor()
+        {
+            var x = document.getElementById("text")
+            if (x.innerHTML === "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt fugit perferendis necessitatibus asperiores eligendi sint cumque sequi nemo architecto dicta consequatur itaque laborum laudantium unde amet, impedit nam adipisci dolores?")
+            {
+                x.innerHTML = "Swapped text!";
+                document.body.style.background = 'red';
+            } else{
+                document.body.style.background = 'white';
+                x.innerHTML = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt fugit perferendis necessitatibus asperiores eligendi sint cumque sequi nemo architecto dicta consequatur itaque laborum laudantium unde amet, impedit nam adipisci dolores?"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="text">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt fugit perferendis necessitatibus asperiores eligendi sint cumque sequi nemo architecto dicta consequatur itaque laborum laudantium unde amet, impedit nam adipisci dolores?
+    </div>
+    <br>
+    <input type="button" onclick="chBackcolor('red');" value="Change text and color">
+</body>
+</html>
